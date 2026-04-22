@@ -23,7 +23,6 @@ class NumberSeparator:
 
         print("Done creating even.txt and odd.txt")
 
-
 # RUN
 number_separator = NumberSeparator("numbers.txt")
 number_separator.separate_even_and_odd()
