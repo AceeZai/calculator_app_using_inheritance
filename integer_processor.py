@@ -3,18 +3,35 @@ class IntegerProcessor:
         self.input_filename = input_filename
 
     def process_integers(self):
-        input_file = open(self.input_filename, "r")
+        try:
+            input_file = open(self.input_filename, "r")
+        except FileNotFoundError:
+            print("Error: integers.txt file not found in project folder.")
+            return
 
         double_file = open("double.txt", "w")
         triple_file = open("triple.txt", "w")
 
-
         for number_line in input_file:
-            number = int(number_line.strip())
+            number_line = number_line.strip()
+
+            if number_line == "":
+                continue
+
+            number = int(number_line)
 
             if number % 2 == 0:
-                squared_value = number ** 2
-                double_file.write(str(squared_value) + "\n")
+                double_file.write(str(number ** 2) + "\n")
             else:
-                cubed_value = number ** 3
-                triple_file.write(str(cubed_value) + "\n")
+                triple_file.write(str(number ** 3) + "\n")
+
+        input_file.close()
+        double_file.close()
+        triple_file.close()
+
+        print("Done: files created successfully.")
+
+
+# RUN (OUTSIDE CLASS)
+processor = IntegerProcessor("integers.txt")
+processor.process_integers()
