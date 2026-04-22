@@ -6,7 +6,7 @@ class StudentRecord:
         input_file = open(self.input_filename, "r")
 
         highest_student_name = ""
-        highest_gwa_value = -1
+        highest_gwa_value = float("inf")
 
         for student_line in input_file:
             parts = student_line.strip().split()
@@ -14,7 +14,7 @@ class StudentRecord:
             gwa_value = float(parts[-1])
             student_name = " ".join(parts[:-1])
 
-            if gwa_value > highest_gwa_value:
+            if gwa_value < highest_gwa_value:
                 highest_gwa_value = gwa_value
                 highest_student_name = student_name
 
