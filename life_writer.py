@@ -1,9 +1,12 @@
 class LifeWriter:
-    def __init__(self, filename):
-        self.filename = filename
+    def __init__(self):
+        self.filename = r"C:\Users\Acee Zai Mendez\PycharmProjects\PythonProject\mylife.txt"
 
     def write_lines(self):
-        output_file = open(self.filename, "r")
+        with open(self.filename, "w") as output_file:
+            while true
+
+        output_file = open(self.filename, "w")
 
         while True:
             line_input = input("Enter line: ")
@@ -14,6 +17,4 @@ class LifeWriter:
             if more_lines.lower() == "n":
                 break
 
-        output_file.close()
-        print("File writing complete.")
-l
+print("Writing file to:", self.filename)
