@@ -1,1 +1,1 @@
-#CHECK NUMBERS THAT ARE ODD OR EVEN
+# P-1: Separate even and odd numbers from numbers.txt
