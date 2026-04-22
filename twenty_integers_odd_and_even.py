@@ -9,11 +9,9 @@ class NumberSeparator:
         odd_file = open("odd.txt", "w")
         file = open(self.filename, "r")
 
-
-for line in file:
-    num = int(num.strip())
-
-    if num % 2 == 0:
-        even_file.write(str(num) + "\n")
-    else:
-        odd_file.write(str(num) + "\n")
+        for line in file:
+            num = int(num.strip())
+            if num % 2 == 0:
+                even_file.write(str(num) + "\n")
+            else:
+                odd_file.write(str(num) + "\n")
