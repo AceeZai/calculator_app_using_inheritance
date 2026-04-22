@@ -1,6 +1,6 @@
 class LifeWriter:
     def __init__(self):
-        self.filename = r"C:\Users\Acee Zai Mendez\PycharmProjects\PythonProject\mylife.txt"
+        self.filename = r"mylife.txt"
 
     def write_lines(self):
         with open(self.filename, "w") as output_file:

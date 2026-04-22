@@ -3,8 +3,8 @@ class NumberSeparator:
         self.filename = filename
 
     def separate_even_odd(self):
-        even_file = open("even.txt", "w")
-        odd_file = open("odd.txt", "w")
+        even_file = open("p1_even-odd/even.txt", "w")
+        odd_file = open("p1_even-odd/odd.txt", "w")
         file = open(self.filename, "r")
 
         for line in file:
@@ -28,5 +28,5 @@ class NumberSeparator:
 
 
 # RUN
-obj = NumberSeparator("numbers.txt")
+obj = NumberSeparator("p1_even-odd/numbers.txt")
 obj.separate_even_odd()

@@ -24,5 +24,5 @@ class StudentRecord:
         print("GWA:", highest_gwa_value)
 
 # RUN
-student_record = StudentRecord("students.txt")
+student_record = StudentRecord("p2_student_gwa/students.txt")
 student_record.find_highest_gwa()

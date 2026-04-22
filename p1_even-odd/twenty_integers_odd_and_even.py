@@ -25,5 +25,5 @@ class NumberSeparator:
 
 
 # RUN
-number_separator = NumberSeparator("numbers.txt")
+number_separator = NumberSeparator("p1_even_odd/numbers.txt")
 number_separator.separate_even_and_odd()
