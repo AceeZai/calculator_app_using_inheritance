@@ -6,11 +6,14 @@ class LifeWriter:
         output_file = open(self.filename, "r")
 
         while True:
-            line_iput = input("Enter line: ")
+            line_input = input("Enter line: ")
             output_file.write(line_input + "\n")
 
-            more_lines = input("Are there ore lines y/n? ")
+            more_lines = input("Are there more lines y/n? ")
 
             if more_lines.lower() == "n":
-                print("File writing complete.")
+                break
+
+        output_file.close()
+        print("File writing complete.")
 l
