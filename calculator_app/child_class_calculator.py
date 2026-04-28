@@ -1,7 +1,7 @@
 
 
 class Calculator:
-    def add_numbers
+    def _init_(self):
         self.calculation_history = []
 
     def display_menu(self):
@@ -12,10 +12,11 @@ class Calculator:
         print("4 - Division")
         print("=============================")
 
-    while True:
-        try:
-            user_input = float(input(input_message))
-            return user_input
+    def get_valid_number(self, input_message):
+        while True:
+            try:
+                user_input = float(input(input_message))
+                return user_input
 
     def subtract_numbers(self, first_number, second_number):
         return first_number - second_number
