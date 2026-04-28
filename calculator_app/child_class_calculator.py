@@ -12,6 +12,11 @@ class Calculator:
         print("4 - Division")
         print("=============================")
 
+    while True:
+        try:
+            user_input = float(input(input_message))
+            return user_input
+
     def subtract_numbers(self, first_number, second_number):
         return first_number - second_number
 
