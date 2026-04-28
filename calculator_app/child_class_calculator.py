@@ -1,6 +1,7 @@
 
 
 class Calculator:
+
     def _init_(self):
         self.calculation_history = []
 
@@ -10,6 +11,7 @@ class Calculator:
         print("2 - Subtraction")
         print("3 - Multiplication")
         print("4 - Division")
+        print("5 - View History")
         print("=============================")
 
     def get_valid_number(self, input_message):
@@ -20,9 +22,8 @@ class Calculator:
             except ValueError:
                 print("Invalid input. Please enter a valid number.")
 
-    def subtract_numbers(self, first_number, second_number):
-        return first_number - second_number
-
+    def save_history(self, first_number, second_number, operation_symbol, result_value):
+        history_entry =  {first_number} {operation_symbol} {second_number} {secpnd_number} = {result_value}""
     def multiply_numbers(self, first_number, second_number):
         return first_number * second_number
 
