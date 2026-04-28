@@ -1,6 +1,6 @@
+from calculator import Calculator
 
-
-class Calculator:
+class AppCalculator(Calculator):
 
     def _init_(self):
         self.calculation_history = []
