@@ -23,9 +23,16 @@ class AppCalculator(Calculator):
         print("=============================")
 
     def save_history(self, first_number, second_number, operation_symbol, result_value):
-        history_entry =  f"{first_number} {operation_symbol} {second_number} = {result_value}""
-    def multiply_numbers(self, first_number, second_number):
-        return first_number * second_number
+        history_entry =  f"{first_number} {operation_symbol} {second_number} = {result_value}"
+        self.calculation_history.append(history_entry)
+
+    def show_history(self):
+        print("\n===== HISTORY =====")
+        if not self.calculation_history:
+            print("No calculations yet.")
+        else:
+            for history_entry in self.calculation_history:
+                print(history_entry)
 
     def divide_numbers(self, first_number, second_number):
         if second_number == 0:
