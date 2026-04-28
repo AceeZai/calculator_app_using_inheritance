@@ -5,7 +5,7 @@ class Calculator:
         self.calculation_history = []
 
     def display_menu(self):
-        print("n===== SIMPLE CALCULATOR =====")
+        print("\n===== SIMPLE CALCULATOR =====")
         print("1 - Addition")
         print("2 - Subtraction")
         print("3 - Multiplication")
@@ -17,6 +17,8 @@ class Calculator:
             try:
                 user_input = float(input(input_message))
                 return user_input
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
 
     def subtract_numbers(self, first_number, second_number):
         return first_number - second_number
