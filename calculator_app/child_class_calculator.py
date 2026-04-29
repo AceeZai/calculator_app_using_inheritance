@@ -35,8 +35,8 @@ class AppCalculator(Calculator):
         if not self.calculation_history:
             print("No calculations yet.")
         else:
-            for history_entry in self.calculation_history:
-                print(history_entry)
+            for index, entry in enumerate(self.calculation_history, start=1):
+                print(f"{index}. {entry}")
 
     def run_calculator(self):
         while True:
