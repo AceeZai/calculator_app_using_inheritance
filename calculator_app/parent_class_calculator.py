@@ -1,5 +1,3 @@
-from calculator import Calculator
-
 class Calculator:
     def add_numbers(self, first_number, second_number):
         return first_number + second_number
