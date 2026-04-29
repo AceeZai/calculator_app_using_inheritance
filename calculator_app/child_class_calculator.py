@@ -15,6 +15,7 @@ class AppCalculator(Calculator):
 
     def display_menu(self):
         print("\n===== SIMPLE CALCULATOR =====")
+        print("---------MENU---------")
         print("1 - Addition")
         print("2 - Subtraction")
         print("3 - Multiplication")
