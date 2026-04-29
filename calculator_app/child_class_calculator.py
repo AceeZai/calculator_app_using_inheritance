@@ -43,3 +43,6 @@ class AppCalculator(Calculator):
             if user_input == "5":
                 self.show_history()
                 continue
+
+            first_number = self.get_valid_number("Enter first number: ")
+            second_number = self.get_valid_number("Enter second number: ")
