@@ -15,7 +15,7 @@ class AppCalculator(Calculator):
 
     def display_menu(self):
         print("\n===== SIMPLE CALCULATOR =====")
-        print("---------MENU---------")
+        print("\n========== MENU ==========")
         print("1 - Addition")
         print("2 - Subtraction")
         print("3 - Multiplication")
@@ -35,7 +35,7 @@ class AppCalculator(Calculator):
             for history_entry in self.calculation_history:
                 print(history_entry)
 
-    def divide_numbers(self, first_number, second_number):
-        if second_number == 0:
-            raise ZeroDivisionError("Division by zero is not allowed.")
-        return first_number / second_number
+    def run_calculator(self):
+        while True:
+            self.display_menu()
+            user_input = input("Enter your menu choice from 1-5")
