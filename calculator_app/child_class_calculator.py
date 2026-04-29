@@ -39,3 +39,7 @@ class AppCalculator(Calculator):
         while True:
             self.display_menu()
             user_input = input("Enter your menu choice from 1-5")
+
+            if user_input == "5":
+                self.show_history()
+                continue
