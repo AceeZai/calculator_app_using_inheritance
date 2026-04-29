@@ -54,6 +54,14 @@ class AppCalculator(Calculator):
                 elif user_input == "2":
                     result = first_number - second_number
 
+                elif user_input == "3":
+                    result = first_number * second_number
+
+                elif user_input == "4":
+                    result = first_number / second_number
+
+
+
 
 
 
