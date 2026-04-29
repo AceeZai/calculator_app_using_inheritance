@@ -50,15 +50,19 @@ class AppCalculator(Calculator):
             try:
                 if user_input == "1":
                     result = self.add_numbers(first_number, second_number)
+                    symbol = "+"
 
                 elif user_input == "2":
                     result = self.subtract_numbers(first_number, second_number)
+                    symbol = "-"
 
                 elif user_input == "3":
                     result = self.multiply_numbers(first_number, second_number)
+                    symbol = "*"
 
                 elif user_input == "4":
                     result = self.divide_numbers(first_number, second_number)
+                    symbol = "/"
 
                 else:
                     print("Invalid input. Please enter a valid number.")
