@@ -48,4 +48,7 @@ class AppCalculator(Calculator):
             second_number = self.get_valid_number("Enter second number: ")
 
             try:
-                operation_symbol = self.get_valid_number("Enter operation symbol: ")
+                if user_input == "1":
+                    result = first_number + second_number
+
+
