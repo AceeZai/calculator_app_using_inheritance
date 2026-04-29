@@ -15,14 +15,16 @@ class AppCalculator(Calculator):
                 print("Invalid input. Please enter a valid number.")
 
     def display_menu(self):
-        print("\n===== SIMPLE CALCULATOR =====")
-        print("\n========== MENU ==========")
-        print("1 - Addition")
-        print("2 - Subtraction")
-        print("3 - Multiplication")
-        print("4 - Division")
-        print("5 - View History")
-        print("=============================")
+        print("\n" + "=" * 30)
+        print("      SIMPLE CALCULATOR")
+        print("=" * 30)
+        print("1 ➜ Addition")
+        print("2 ➜ Subtraction")
+        print("3 ➜ Multiplication")
+        print("4 ➜ Division")
+        print("5 ➜ View History")
+        print("0  ➜ Exit")
+        print("=" * 30)
 
     def save_history(self, first_number, second_number, operation_symbol, result_value):
         history_entry =  f"{first_number} {operation_symbol} {second_number} = {result_value}"
