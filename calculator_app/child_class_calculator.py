@@ -46,3 +46,6 @@ class AppCalculator(Calculator):
 
             first_number = self.get_valid_number("Enter first number: ")
             second_number = self.get_valid_number("Enter second number: ")
+
+            try:
+                operation_symbol = self.get_valid_number("Enter operation symbol: ")
