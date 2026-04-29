@@ -60,6 +60,10 @@ class AppCalculator(Calculator):
                 elif user_input == "4":
                     result = first_number / second_number
 
+                else:
+                    print("Invalid input. Please enter a valid number.")
+                    continue
+
 
 
 
