@@ -65,7 +65,15 @@ class AppCalculator(Calculator):
                     continue
 
                 print(f"\nResult: {first_number} {symbol} {second_number} = {result}")
-            self.save_history(first_number, second_number, symbol, result)
+                self.save_history(first_number, second_number, symbol, result)
+
+            except ZeroDivisionError as error_message:
+                print("Error:", error_message)
+
+            try_again = input("\nDo you want to try again? (yes/no): ").lower()
+            if try_again != "yes":
+                print("Thank you!")
+                break
 
 
 
