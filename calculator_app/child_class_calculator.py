@@ -64,6 +64,9 @@ class AppCalculator(Calculator):
                     print("Invalid input. Please enter a valid number.")
                     continue
 
+                print(f"\nResult: {first_number} {symbol} {second_number} = {result}")
+            self.save_history(first_number, second_number, symbol, result)
+
 
 
 
