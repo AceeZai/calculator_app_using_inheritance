@@ -3,6 +3,7 @@ from calculator_app.parent_class_calculator import Calculator
 class AppCalculator(Calculator):
 
     def __init__(self):
+        super().__init__()
         self.calculation_history = []
 
     def get_valid_number(self, input_message):
