@@ -2,7 +2,7 @@ from calculator_app.parent_class_calculator import Calculator
 
 class AppCalculator(Calculator):
 
-    def _init_(self):
+    def __init__(self):
         self.calculation_history = []
 
     def get_valid_number(self, input_message):
@@ -42,6 +42,10 @@ class AppCalculator(Calculator):
 
             if user_input == "5":
                 self.show_history()
+                continue
+
+            if user_input not in ["1", "2", "3", "4", "5"]:
+                print ("Invalid input. Please enter a valid number.")
                 continue
 
             first_number = self.get_valid_number("Enter first number: ")
