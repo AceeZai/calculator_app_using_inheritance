@@ -49,16 +49,16 @@ class AppCalculator(Calculator):
 
             try:
                 if user_input == "1":
-                    result = first_number + second_number
+                    result = self.add_numbers(first_number, second_number)
 
                 elif user_input == "2":
-                    result = first_number - second_number
+                    result = self.subtract_numbers(first_number, second_number)
 
                 elif user_input == "3":
-                    result = first_number * second_number
+                    result = self.multiply_numbers(first_number, second_number)
 
                 elif user_input == "4":
-                    result = first_number / second_number
+                    result = self.divide_numbers(first_number, second_number)
 
                 else:
                     print("Invalid input. Please enter a valid number.")
