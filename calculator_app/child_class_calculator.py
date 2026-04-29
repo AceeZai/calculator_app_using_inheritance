@@ -1,4 +1,4 @@
-from calculator import Calculator
+from calculator_app.parent_class_calculator import Calculator
 
 class AppCalculator(Calculator):
 
